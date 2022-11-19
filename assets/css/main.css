@@ -5,6 +5,10 @@
     --darker: #121D36;
 }
 
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     margin: 0%;
     padding: 0%;
@@ -37,7 +41,7 @@ menu {
     background-color: var(--mid);
     padding: 10px;
     border-radius: 50%;
-    margin: 0px -1px;
+    margin: 0px -2px;
     width: 96px;
     height: 96px;
     transition: 1s;

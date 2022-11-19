@@ -33,8 +33,8 @@ let ru = {
 }
 
 window.onload = function() {
-    let menu = navigator.language == "ru" ? ru["menu"] : en["menu"];
-    let footer = navigator.language == "ru" ? ru["footer"] : en["footer"];
+    let menu = document.querySelector("html").getAttribute("lang") == "ru" ? ru["menu"] : en["menu"];
+    let footer = document.querySelector("html").getAttribute("lang") == "ru" ? ru["footer"] : en["footer"];
 
     document.querySelector("body").innerHTML = menu + document.querySelector("body").innerHTML + footer;
 };
